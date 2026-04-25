@@ -275,7 +275,7 @@ Function Register-VcfOperations {
 
         .EXAMPLE
             $VCF_OPERATIONS_REGISTRATION_LABEL="vcf01.vcf.lab"
-            $VCF_OPERATIONS_REGISTRATION_FILE="Registration-vcf01.vcf.lab-2025-12-16T15_03_43Z.data"
+            $VCF_OPERATIONS_REGISTRATION_FILE="/Users/lamw/Desktop/Registration-vcf01.vcf.lab-2025-12-16T15_03_43Z.data"
 
             Register-VcfOperations -TenantId $VCF_BSC_TENANT_ID -RegistrationFile $VCF_OPERATIONS_REGISTRATION_FILE -Name $VCF_OPERATIONS_REGISTRATION_LABEL
     #>
@@ -494,7 +494,7 @@ Function Download-VcfBscLicense  {
             The filename where the license file will be saved
 
         .EXAMPLE
-            $VCF_LICENSE_FILE="vcf01.vcf.lab.lic"
+            $VCF_LICENSE_FILE="/Users/lamw/Desktop/vcf01.vcf.lab.lic"
 
             Download-VcfBscLicense -TenantId $VCF_BSC_TENANT_ID -VcfOperationsId $VCF_BSC_OPERATIONS_REGISTRATION_ID -LicenseFile $VCF_LICENSE_FILE
     #>
@@ -672,7 +672,7 @@ Function Import-VcfOperationsLicenseFile {
             The name of the license file to import
 
         .EXAMPLE
-            $VCF_LICENSE_FILE="vcf01.vcf.lab.lic"
+            $VCF_LICENSE_FILE="/Users/lamw/Desktop/vcf01.vcf.lab.lic"
 
             Import-VcfOperationsLicenseFile -LicenseFile $VCF_LICENSE_FILE
     #>
@@ -785,7 +785,7 @@ Function Import-VcfOperationsUsageFile  {
             The name of the usage file to import
 
         .EXAMPLE
-            $VCF_OPERATIONS_USAGE_FILE="Usage-vcf01.vcf.lab-2025-12-16T21_09_14Z.gzip"
+            $VCF_OPERATIONS_USAGE_FILE="/Users/lamw/Desktop/Usage-vcf01.vcf.lab-2025-12-16T21_09_14Z.gzip"
 
             Import-VcfOperationsUsageFile -TenantId $VCF_BSC_TENANT_ID -UsageFile $VCF_OPERATIONS_USAGE_FILE
     #>
