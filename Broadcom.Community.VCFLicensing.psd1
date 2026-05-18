@@ -10,7 +10,7 @@
 RootModule = 'Broadcom.Community.VCFLicensing.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.1'
+ModuleVersion = '2.0.0'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -25,7 +25,7 @@ Author = 'William Lam'
 CompanyName = 'Broadcom'
 
 # Copyright statement for this module
-Copyright = '(c) 2025 Broadcom. All rights reserved.'
+Copyright = '(c) 2026 Broadcom. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = 'PowerShell Module for automating license entitlement between VCF Business Service Console and VCF Operations'
@@ -36,7 +36,7 @@ PowerShellVersion = '7.0'
 RequiredModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Connect-VcfBsc','Register-VcfOperations','Get-VcfBscCLicense','Set-VcfBscCLicense','Download-VcfBscLicense','Connect-VcfOperations','Download-VcfOperationsRegistrationFile','Import-VcfOperationsLicenseFile','Download-VcfOperationsUsageFile','Import-VcfOperationsUsageFile','Get-VcfOperationsEntitlements','Get-VcfOperationsVcenters','Set-VcfOperationsLicenseAssignment'
+FunctionsToExport = 'Invoke-MultipartUpload','Connect-VcfBsc','Register-VcfOperations','Register-VcfOperations2','Download-VcfBscVerificationFile','Upload-VcfBscConfirmationFile','Get-VcfBscLicense','Set-VcfBscLicense','Set-VcfBscLicense2','Download-VcfBscLicense','Connect-VcfOperations','Download-VcfOperationsRegistrationFile','Import-VcfOperationsVerificationFile','Import-VcfOperationsConfirmationFile','Import-VcfOperationsLicenseFile','Download-VcfOperationsUsageFile','Import-VcfOperationsUsageFile','Get-VcfOperationsEntitlements','Get-VcfOperationsVcenters','Get-VcfOperationsVcenters2','Set-VcfOperationsLicenseAssignment2'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
