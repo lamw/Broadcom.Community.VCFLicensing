@@ -1596,3 +1596,43 @@ Function Set-VcfOperationsLicenseAssignment2 {
     }
 }
 
+Function Get-VcfOperationsRegistrationKey {
+    <#
+        .NOTES
+        ===========================================================================
+        Created by:    William Lam
+        Organization:  Broadcom
+        Blog:          http://www.williamlam.com
+        Twitter:       @lamw
+        ===========================================================================
+        .SYNOPSIS
+            Retrieves the time-bound registration key from VCF Operations to register new License Server
+        .DESCRIPTION
+            This cmdlet retrieves the time-bound registration key from VCF Operations to register new License Server
+
+        .EXAMPLE
+            Get-VcfOperationsRegistrationKey
+    #>
+    Param (
+        [Switch]$Troubleshoot
+    )
+
+    $uri = "https://$($global:vcfOpsConnection.server)/suite-api/internal/extension/vcf-license-cloud-integration/license-servers/otk"
+    $method = "GET"
+
+    if($Troubleshoot) {
+        Write-Host -ForegroundColor cyan "`n[DEBUG] - $method`n$uri`n"
+    }
+
+    try {
+        $requests = Invoke-WebRequest -Method $method -Uri $uri -Headers $global:vcfOpsConnection.headers -SkipCertificateCheck
+    } catch {
+        Write-Error "Error in downloading registration file"
+        Write-Error "`n($_.Exception.Message)`n"
+        break
+    }
+
+    if($requests.StatusCode -eq 200) {
+        return $requests.Content
+    }
+}

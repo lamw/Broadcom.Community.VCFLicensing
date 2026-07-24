@@ -10,7 +10,7 @@
 RootModule = 'Broadcom.Community.VCFLicensing.psm1'
 
 # Version number of this module.
-ModuleVersion = '2.0.0'
+ModuleVersion = '2.0.1'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -36,7 +36,7 @@ PowerShellVersion = '7.0'
 RequiredModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Invoke-MultipartUpload','Connect-VcfBsc','Register-VcfOperations','Register-VcfOperations2','Download-VcfBscVerificationFile','Upload-VcfBscConfirmationFile','Get-VcfBscLicense','Set-VcfBscLicense','Set-VcfBscLicense2','Download-VcfBscLicense','Connect-VcfOperations','Download-VcfOperationsRegistrationFile','Import-VcfOperationsVerificationFile','Import-VcfOperationsConfirmationFile','Import-VcfOperationsLicenseFile','Download-VcfOperationsUsageFile','Import-VcfOperationsUsageFile','Get-VcfOperationsEntitlements','Get-VcfOperationsVcenters','Get-VcfOperationsVcenters2','Set-VcfOperationsLicenseAssignment2'
+FunctionsToExport = 'Invoke-MultipartUpload','Connect-VcfBsc','Register-VcfOperations','Register-VcfOperations2','Download-VcfBscVerificationFile','Upload-VcfBscConfirmationFile','Get-VcfBscLicense','Set-VcfBscLicense','Set-VcfBscLicense2','Download-VcfBscLicense','Connect-VcfOperations','Download-VcfOperationsRegistrationFile','Import-VcfOperationsVerificationFile','Import-VcfOperationsConfirmationFile','Import-VcfOperationsLicenseFile','Download-VcfOperationsUsageFile','Import-VcfOperationsUsageFile','Get-VcfOperationsEntitlements','Get-VcfOperationsVcenters','Get-VcfOperationsVcenters2','Set-VcfOperationsLicenseAssignment2','Get-VcfOperationsRegistrationKey'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()

@@ -38,3 +38,4 @@ For detail usage, please refer to these blog posts:
 * Set-VcfOperationsLicenseAssignment
 * Set-VcfOperationsLicenseAssignment2 (**🆕 for VCF 9.1**)
 * Upload-VcfBscConfirmationFile (**🆕 for VCF 9.1**)
+* Get-VcfOperationsRegistrationKey (**🆕 for VCF 9.1**)
